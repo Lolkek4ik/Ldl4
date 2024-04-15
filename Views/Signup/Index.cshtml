@@ -1,0 +1,25 @@
+﻿<link rel="stylesheet" href="~/css/SignLog.css" asp-append-version="true" />
+@model Data
+@{
+    ViewData["Title"] = "Sign up";
+}
+
+<h1 style=" margin-left: 20px;margin-right: 20px;">Sign Up</h1>
+
+<form method="post" asp-controller="Signup" asp-action="AddUser">
+    <div class="input-container">
+        <label asp-for="Username"></label>
+        <input asp-for="Username" />
+        <span asp-validation-for="Username"></span><br />
+
+        <label asp-for="Password"></label>
+        <input asp-for="Password" />
+        <span asp-validation-for="Password"></span><br />
+
+        <label asp-for="Mail"></label>
+        <input asp-for="Mail" />
+        <span asp-validation-for="Mail"></span><br />
+
+        <input type="submit" value="Submit">
+    </div>
+</form>

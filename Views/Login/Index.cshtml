@@ -1,0 +1,41 @@
+﻿<link rel="stylesheet" href="~/css/SignLog.css" asp-append-version="true" />
+@model Data
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<h1 style=" margin-left: 20px;margin-right: 20px;">Log in</h1>
+
+<form method="post" asp-controller="Login" asp-action="Check">
+    <div class="input-container">
+        <label asp-for="Username"></label>
+        <input asp-for="Username" />
+        <span asp-validation-for="Username"></span><br />
+        
+        <label asp-for="Password"></label>
+        <input asp-for="Password" />
+        <span asp-validation-for="Password"></span><br />
+
+        <label asp-for="Mail"></label>
+        <input asp-for="Mail" />
+        <span asp-validation-for="Mail"></span><br />
+
+
+
+        <input type="submit" value="Submit">
+    </div>
+</form>
+<form method="post" asp-controller="Login" asp-action="ForgotPassword" style="margin-left:46%"><button>Forgot Password?</button></form>
+
+@if (ViewBag.Success == true)
+{
+    <script>
+        alert('You Logged in Successfuly');
+    </script>
+}
+@if (ViewBag.Fail == true)
+{
+    <script>
+        alert('Failed to Log in');
+    </script>
+}

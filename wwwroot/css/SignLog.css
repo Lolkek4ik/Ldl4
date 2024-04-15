@@ -1,0 +1,69 @@
+﻿html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 20px;
+    padding-bottom: 60px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    color: rgb(255, 252, 235);
+    background-color: rgb(54, 54, 54);
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: #555;
+    padding: 10px;
+}
+
+
+.input-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}

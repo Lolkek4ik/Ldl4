@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    
+</head>
+<body>
+    
+    <nav>
+        <button><a href="/">Home</a></button>
+        <button><a href="/Info">Info</a></button>
+        <button><a href="/Signup">Sign up</a></button>
+        <button><a href="/Login">Log in</a></button>
+    </nav>
+    
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <img src="https://media.tenor.com/El89itaAWsIAAAAi/maxwell.gif" />
+    </footer>
+</body>
+</html>

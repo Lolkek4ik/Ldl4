@@ -1,0 +1,25 @@
+﻿<link rel="stylesheet" href="~/css/SignLog.css" asp-append-version="true" />
+@model Recovery
+@{
+    ViewData["Title"] = "Password reset";
+}
+
+<h1 style=" margin-left: 20px;margin-right: 20px;">Log in</h1>
+
+<form method="post" asp-controller="Password" asp-action="Reset">
+    <div class="input-container">
+
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span><br />
+
+        <input type="submit" value="Submit">
+    </div>
+</form>
+
+@if (ViewBag.ShowPopup==true)
+{
+    <script>
+        alert('The email was sent to your mail');
+    </script>
+}
